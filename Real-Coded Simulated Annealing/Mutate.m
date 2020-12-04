@@ -17,7 +17,7 @@
 function y = Mutate(x, mu, sigma, VarMin, VarMax)
 
     A = (rand(size(x))< = mu);
-    J = find(A =  = 1);
+    J = find(A == 1);
 
     y = x;
     y(J) = x(J)+sigma*randn(size(J));
