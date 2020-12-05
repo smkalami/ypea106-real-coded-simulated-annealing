@@ -16,7 +16,7 @@
 
 function y = Mutate(x, mu, sigma, VarMin, VarMax)
 
-    A = (rand(size(x))< = mu);
+    A = (rand(size(x)) <= mu);
     J = find(A == 1);
 
     y = x;
